@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <title>Agence de location de Voitures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .car-section {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .testimonial-section {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        car-section {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            (click)="leftAligned.toggle()"
+            aria-controls="navbarLeftAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse"
+            id="navbarLeftAlignExample"
+            mdbCollapse
+            #leftAligned="mdbCollapse"
+          >
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notre Agence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nos voitures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+ 
+ 
+  
+  </div>
+</nav>
+
+    <header>
+        <h1>Location de voitures AutoCar</h1>
+        <p>Explorez le monde à votre rythme. Notre site de location de voitures offre la clé de votre prochaine aventure, où que la route puisse vous mener. Confort, liberté et découvertes vous attendent. Louez une voiture, créez des souvenirs et vivez l'expérience de la route </p>
+    </header>
+
+    <section class="car-section">
+        <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+            <mdb-carousel-item>
+              <img
+                src="https://cdn2.webmanagercenter.com/wmc/wp-content/uploads/2020/03/nouvelle-suzuki-vatara.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+             
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img
+                src="https://www.tunisienumerique.com/wp-content/uploads/2022/01/voitures-de-luxe.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img
+                src="https://s1.1zoom.me/big0/86/Mercedes-Benz_Brabus_W447_V-class_Black_Metallic_590827_1280x720.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+             
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </section>
+
+    <div class="container">
+      
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://1693852854.rsc.cdn77.org/photos/car/312/location_suzuki_swift_Zaghouan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Suzuki Swift 2020</h5>
+                       
+                        <p class="card-text">Moteurs essence économes en carburant.
+                            Maniabilité agile et conduite confortable en ville.
+                            Options de transmission manuelle ou automatique.</p>
+                        <a href="#" class="btn btn-primary">Réserver</a>
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://1693852854.rsc.cdn77.org/photos/car/309/location_vwpolo8_lamarsa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Polo 8 2021</h5>
+                       
+                        <p class="card-text">Motorisations essence et diesel disponibles.
+                            Options de transmission manuelle ou automatique.
+                            Technologies avancées pour l'efficacité énergétique.</p>
+                        <a href="#" class="btn btn-primary">Réserver</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://1693852854.rsc.cdn77.org/photos/car/167/location_peugeot_208_tunis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Virtus Automatique 2024
+                        </h5>
+                        
+                        <p class="card-text">Style compact et urbain.
+                            Calandre distinctive de la marque Hyundai.
+                            Lignes de carrosserie fluides.
+                            </p>
+                        <a href="#" class="btn btn-primary">Réserver</a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://1693852854.rsc.cdn77.org/photos/car/295/location_voiture_boite-auto_tunis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyundai GI10 Automatique 2020
+                        </h5>
+                     
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Réserver</a>
+             
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the structure for the other cards (Second, Third, Fourth) -->
+            <!-- ... (Your previous code for the other cards) -->
+        </div>
+    </div>
+
+
+    <section class="testimonial-section">
+        <h2>Témoignages Clients</h2>
+        
+        <div class="card">
+            <div class="card-body">
+                <img src="https://1693852854.rsc.cdn77.org/photos/content/images/men.png" alt="" class="img-fluid">
+                <h3 class="card-title">Ahmad </h3>
+                <p class="card-text">20/20</p>
+            </div>
+        </div>
+          
+        <div class="card">
+            <div class="card-body">
+                <img src="https://1693852854.rsc.cdn77.org/photos/content/images/men.png" alt="" class="img-fluid">
+                <h3 class="card-title">Jamila </h3>
+                <p class="card-text">Très bonne expérience Je recommande</p>
+            </div>
+        </div>
+          
+        <div class="card">
+            <div class="card-body">
+                <img src="https://1693852854.rsc.cdn77.org/photos/content/images/men.png" alt="" class="img-fluid">
+                <h3 class="card-title">Mohamed Jamil</h3>
+                <p class="card-text">agence et personnel très sérieux et tres professionnelle; ils sont ponctuel.je recommande.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+        
+
+    <footer>
+        <p>&copy; 2023 Agence de location de voitures AutoCar</p>
+        <p>Contactez-nous : info@locationvoitures.com</p>
+    </footer>
+</body>
+</html>

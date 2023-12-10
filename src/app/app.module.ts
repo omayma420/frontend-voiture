@@ -1,37 +1,32 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { MusicComponent } from './music/music.component';
-import { MusicListComponent } from './music-list/music-list.component';
-import { LibrairyComponent } from './librairy/librairy.component';
 import { FormsModule } from '@angular/forms';
-import { SerachComponent } from './serach/serach.component'; 
-import { AppConfigModule } from './app-config/app-config.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Add this line
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+
+import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ItuneService } from 'src/shared/itune-service';
+import { AppRoutingModule } from './app-routing.module';
+import { landingComponent } from './landing/landing.component';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    MusicComponent,
-    MusicListComponent,
-    LibrairyComponent,
-    SerachComponent
+    landingComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    AppConfigModule,
-    HttpClientModule 
-    
+    MdbCarouselModule,
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([]),
+    AppRoutingModule,
+    MdbCollapseModule,
+    BrowserAnimationsModule, // Add this line
   ],
-  providers: [
-    ItuneService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
